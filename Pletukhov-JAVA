@@ -1,0 +1,76 @@
+\\1. Написать программу, которая принимает на вход два целых числа (a и b) и совершает с ними следующие действия:
+- сравнивает эти два числа и возвращает результат сравнения путем вывода в консоль одного из вариантов: "a > b", "a < b" или "a = b";
+- совершает с этими числами операции сложения, вычитания, деления и умножения и результат выводит в консоль.
+
+import java.util.*;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        
+      Scanner input = new Scanner( System.in );
+        
+        int x1 = input.nextInt();
+        int x2 = input.nextInt();
+        
+      input.close();
+        
+    if ( x1 > x2 ) 
+    System.out.println( x1 ) ;
+
+    if ( x1 < x2 ) 
+    System.out.println( x2 );
+
+    if ( x1 == x2 ) 
+    System.out.println( x1 = x2 );
+  
+    int z = x1 + x2;
+    System.out.println( z ); 
+    
+    int x = x1 - x2;
+    System.out.println( x );
+    
+    int c = x1 % x2;
+    System.out.println( c );
+    
+    int v = x1 * x2;
+    System.out.println( v );
+  
+  }
+}
+
+\\2. Написать программу, которая принимает на вход две строки (a и b) и сравнивает их. В результате сравнения в консоль должно быть выведено одно из сообщений: "Строки неидентичны" или "Строки идентичны"
+
+import java.util.*;
+import java.util.Scanner;
+
+public class Program {
+    public static void main(String[] args) {
+        
+      Scanner input = new Scanner( System.in );
+        
+        String x1 = input.nextLine();
+        String x2 = input.nextLine();
+        
+      input.close();
+      
+    if ( x1. equals (x2) )System.out.println( "Строки идентичны" ); 
+      else System.out.println( "Строки неидентичны" );
+    
+  }
+}
+
+\\3. Задан массив целых чисел: [1, 2, 3, 4, 5, 6, 7, 8, 9,10]  необходимо написать программу, которая выведет в консоль все чётные числа. 
+
+import java.util.*;
+
+public class Program {
+    public static void main(String[] args) {
+      
+    int [] array1 = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+    for ( int i = 0; i < array1.length; i++) {
+      if(array1[i] %2 == 0)
+      System.out.print( array1 [i] + ", ");
+    }
+  }
+}
